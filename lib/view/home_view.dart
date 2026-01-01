@@ -98,40 +98,40 @@ class HomeView extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 20),
-                //
-                // _buildMenuButton(
-                //   context,
-                //   title: 'حروف کی زکوٰۃ',
-                //   subtitle: 'Calculate Zakat Levels',
-                //   icon: Icons.auto_awesome,
-                //   onTap: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => const CalculatorView(isZakat: true),
-                //       ),
-                //     );
-                //   },
-                // ),
-                //
-                // const SizedBox(height: 20),
-                //
-                // _buildMenuButton(
-                //   context,
-                //   title: 'حروف کی فہرست',
-                //   subtitle: 'View All Letters & Values',
-                //   icon: Icons.list_alt,
-                //   onTap: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => const LettersTableView(),
-                //       ),
-                //     );
-                //   },
-                // ),
 
-                // const Spacer(),
+                _buildMenuButton(
+                  context,
+                  title: 'حروف کی زکوٰۃ',
+                  subtitle: 'Calculate Zakat Levels',
+                  icon: Icons.auto_awesome,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CalculatorView(isZakat: true),
+                      ),
+                    );
+                  },
+                ),
+
+                const SizedBox(height: 20),
+
+                _buildMenuButton(
+                  context,
+                  title: 'حروف کی فہرست',
+                  subtitle: 'View All Letters & Values',
+                  icon: Icons.list_alt,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LettersTableView(),
+                      ),
+                    );
+                  },
+                ),
+
+                const Spacer(),
 
                 // Footer
                 Text(

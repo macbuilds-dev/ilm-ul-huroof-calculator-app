@@ -512,7 +512,7 @@ class _CalculatorViewState extends State<CalculatorView> {
               ),
               IconButton(
                 onPressed: () {
-                  if (_maxLevel < 1000) {
+                  if (_maxLevel < 1000 ) {
                     setState(() {
                       _maxLevel++;
                       _levelController.text = _maxLevel.toString();
